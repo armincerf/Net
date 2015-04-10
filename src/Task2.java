@@ -13,6 +13,7 @@ import java.util.List;
 class Task2 {
     public static Server makeServer () throws NetException {
         Server server = new Server() {
+
             @Override
             public void start(int port, String password, List<String> forbidden) throws NetException {
             boolean authenticated = false;
